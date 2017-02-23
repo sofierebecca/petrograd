@@ -1,0 +1,67 @@
+/*!
+ * Custom styles af DIG
+ */
+
+
+/*Generelt*/
+
+body {
+    background-color: #EFF9F6;
+}
+.splash img {
+    width: 100%;
+}
+.nav {
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 3;
+    text-align: center;
+}
+.navbar-nav li a {
+    line-height: 50px;
+    margin-bottom: -2vw;
+}
+.navbar-nav {
+    float: none;
+    text-align: center;
+    display: inline-block;
+}
+nav img {
+    width: 60%;
+    margin-top: -0.2vw;
+}
+a {
+    color: #008E66;
+}
+a:-webkit-any-link {
+    color: #008E66;
+}
+.icon-bar {
+    background-color: black;
+}
+
+/*food.html*/
+
+.retter img {
+    width: 100%;
+}
+.kategori h1 {
+    text-align: center;
+}
+.retter {
+    margin-top: 4vw;
+}
+.retter h1 {
+    margin-bottom: 3vw;
+    margin-top: 5vw;
+    color: #F44232;
+}
+.retter p {
+    margin-top: 1vw;
+    color: #005C42;
+}
+.retter h4 {
+    margin-bottom: 2vw;
+    color: #E5756D;
+}
