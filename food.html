@@ -49,18 +49,18 @@
 
 
 
-    <div class="container retter">
+    <div class="row">
+        <div class="col-xs-12 kategori">
+            <h1 class="page-header">FORRETTER</h1>
+        </div>
+    </div>
 
+    <div class="row produktliste">
 
+        <!--            Her skal produktet lægges ind-->
 
-        <section class="row">
-
-            <div class="col-xs-12 kategori">
-                <h1>FORRETTER</h1>
-            </div>
-
-            <!--Forret 1-->
-            <template id="produkt_template"></template>
+        <!--Forret 1-->
+        <template id="produkt_template">
             <div class="col-xs-4">
                 <h3 class="data_navn">DATA_NAVN</h3>
                 <a href="#"><img class="img_responsive data_billede" src="pictures/small/ringbroed-druer-sm.jpg" alt=""></a>
@@ -75,122 +75,44 @@
 
 
             </div>
-            </template>
-
-
-        </section>
-        <!--
-
-        <section class="row">
-            <div class="col-xs-12 kategori">
-                <h1>HOVEDRETTER</h1>
-            </div>
-            <div class="col-xs-4">
-                <h4>BULGARSK BONDESUPPE</h4>
-                <img src="pictures/small/bulgarskbondesuppe-sm.jpg" alt="">
-                <p>Cauceskus bulgarske bondesuppe
-                    <br> 99,-
-                </p>
-                <button type="button" class="btn btn-primary btn-lg knap" data-toggle="modal" data-target="#myModal">
-                    Læs mere
-                </button>
-            </div>
-            <div class="col-xs-4">
-                <h4>RUSSISK TAPAS</h4>
-                <img src="pictures/small/russisktapas-sm.jpg" alt="">
-                <p>Russisk tapas med tomater og kød
-                    <br> 199,-
-                </p>
-                <button type="button" class="btn btn-primary btn-lg knap" data-toggle="modal" data-target="#myModal">
-                    Læs mere
-                </button>
-            </div>
-            <div class="col-xs-4">
-                <h4>KÆMPE ROGN MED KARTOFFELMOS</h4>
-                <img src="pictures/small/mos-rogn-sm.jpg" alt="">
-                <p>Kæmpe klipfiskerogn med Kartofler og fiskefond
-                    <br> 89,-
-                </p>
-                <button type="button" class="btn btn-primary btn-lg knap" data-toggle="modal" data-target="#myModal">
-                    Læs mere
-                </button>
-            </div>
-
-
-        </section>
--->
-
-        <!--
-        <section class="row">
-            <div class="col-xs-12 kategori">
-                <h1>DESSERTER</h1>
-            </div>
-            <div class="col-xs-4">
-                <h4>GUZNI</h4>
-                <img src="pictures/small/guzni-sm.jpg" alt="">
-                <p>Guzni - Rødbede/nøddeis
-                    <br> 69,-
-                </p>
-                <button type="button" class="btn btn-primary btn-lg knap" data-toggle="modal" data-target="#myModal">
-                    Læs mere
-                </button>
-            </div>
-            <div class="col-xs-4">
-                <h4>PAVLOVA I MELON</h4>
-                <img src="pictures/small/bulgarskbondesuppe-sm.jpg" alt="">
-                <p>Pavlova - russiske pandekager - i honningmelon fra Nordkorea
-                    <br> 49,-
-                </p>
-                <button type="button" class="btn btn-primary btn-lg knap" data-toggle="modal" data-target="#myModal">
-                    Læs mere
-                </button>
-            </div>
-            <div class="col-xs-4">
-                <h4>GROGGIROSHORN</h4>
-                <img src="pictures/small/groggiroshorn-sm.jpg" alt="">
-                <p>Groggishorn - det russiske svar på pølsehorn
-                    <br> 39,-
-                </p>
-                <button type="button" class="btn btn-primary btn-lg knap" data-toggle="modal" data-target="#myModal">
-                    Læs mere
-                </button>
-            </div>
-
-        </section>
--->
-
-        <!-- Modal -->
-        <!--     MODAL BOKS -->
-        <!--    REN FKT KODE-->
-
-        <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                        <h4 class="modal-title">INFORMATIONER OM RETTEN</h4> </div>
-                    <!--                    INFORMATIONER OM RETTEN INDE I MODAL BOKSEN-->
-                    <div class="modal-body"> <img src="pictures/medium/boef-md.jpg" class="img-responsive" alt="billede">
-                        <p>NAVN: <span class="data_navn">NAVN </span></p>
-                        <p>LANGBESKRIVELSE: <span class="data_langbeskrivelse">LANGBESKRIVELSE </span></p>
-                        <p>PRIS: <span class="data_pris">PRIS </span></p>
-                        <p>UDSOLGT: <span class="data_udsolgt">UDSOLGT </span></p>
-                        <p>RABAT: <span class="data_rabat">RABAT</span></p>
-                        <p>VEGETAR: <span class="data_vegetar">VEGETAR</span></p>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
+        </template>
 
 
     </div>
+
+
+    <!-- Modal -->
+    <!--     MODAL BOKS -->
+    <!--    REN FKT KODE-->
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">INFORMATIONER OM RETTEN</h4> </div>
+                <!--                    INFORMATIONER OM RETTEN INDE I MODAL BOKSEN-->
+                <div class="modal-body"> <img src="pictures/medium/boef-md.jpg" class="img-responsive" alt="billede">
+                    <p>NAVN: <span class="data_navn">NAVN </span></p>
+                    <p>LANGBESKRIVELSE: <span class="data_langbeskrivelse">LANGBESKRIVELSE </span></p>
+                    <p>PRIS: <span class="data_pris">PRIS </span></p>
+                    <p>UDSOLGT: <span class="data_udsolgt">UDSOLGT </span></p>
+                    <p>RABAT: <span class="data_rabat">RABAT</span></p>
+                    <p>VEGETAR: <span class="data_vegetar">VEGETAR</span></p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
 
     <!-- jQuery Version 1.11.1 -->
@@ -198,6 +120,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/petrograd.js"></script>
 
 </body>
 
