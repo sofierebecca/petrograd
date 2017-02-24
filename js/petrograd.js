@@ -2,14 +2,22 @@ window.addEventListener("load", sidenVises);
 
 function sidenVises() {
     console.log("siden vises");
+
+    // læs produktliste
+    $.getJSON("http://petlatkea.dk/2017/dui/api/productlist?callback=?", visProduktListe);
     visProdukt();
 }
 
-function visProdukt() {
-    //klon produkt_template
-    var klon = document.querySelector("#produkt_template").content.cloneNode(true);
-    //indsæt data i klon
+function visProduktListe(listen) {
+    console.table(listen);
+}
 
-    //append klon til .produkt_liste
+function visProdukt() {
+    // klon produkt_template
+    var klon = document.querySelector("#produkt_template").content.cloneNode(true);
+
+    // indsæt data i klon
+
+    // append klon til .produkt_liste
     document.querySelector(".produktliste").appendChild(klon);
 }
